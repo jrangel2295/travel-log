@@ -6,10 +6,14 @@ function App() {
 	const [data, setData] = useState([])
 
 	useEffect(() => {
-		fetch('https://api.mapbox.com/styles/v1/{username}/{style_id}')
+		fetch('https://www.travel-advisory.info/api')
 			.then(response => response.json())
-			.then(data => setData(data.results))
+			.then(data => setData(data.data))
 	}, [])
+
+	useEffect(() => {
+		console.log(data);
+	  }, [data]);
 
 	return (
 		<div className="App">

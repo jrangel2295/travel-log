@@ -5,8 +5,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ActionAreaCard() {
+export default function ActionAreaCard(props) {
   return (
+    // const { name, gender, email, picture, location, login } = props.item;
+
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
